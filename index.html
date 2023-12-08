@@ -8,85 +8,93 @@
     <!-- Internal CSS Style -->
     <style>
         body {
-            font-family: 'Helvetica', sans-serif;
-            background-color: #F5EFE8;
-            margin: 0;
-            padding: 0;
-        }
+    font-family: 'Helvetica', sans-serif;
+    background-color: #F5EFE8;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background-color: #111628;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
+header {
+    background-color: #111628;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header is on top of other elements */
+}
 
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 100px; /* Adjust as needed based on your header's height */
+    width: 100%;
+    z-index: 1000; /* Ensure the nav is on top of other elements */
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+nav a:hover {
+    text-decoration: underline;
+}
 
-        main {
-            padding: 20px;
-            margin: 10px;
-        }
+main {
+    padding: 125px 20px 20px; /* Adjust the top padding based on your header's height */
+    margin: 10px;
+}
 
-        h1, h2, p {
-            margin-bottom: 15px;
-        }
+h1, h2, p {
+    margin-bottom: 15px;
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-        }
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
 
-        img:hover {
-            transform: scale(1.1);
-        }
+img:hover {
+    transform: scale(1.1);
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
 
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
 
-        th {
-            background-color: #333;
-            color: #fff;
-        }
+th {
+    background-color: #333;
+    color: #fff;
+}
 
-        footer {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
 
         .image-container {
             text-align: center;
